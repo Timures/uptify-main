@@ -1,7 +1,7 @@
 <!-- H1.vue -->
 
 <template>
-    <h1 :style="getStyleObject">{{ title }}</h1>
+    <h1 class="custom_h1" :style="getStyleObject">{{ title }}</h1>
   </template>
   
   <script>
@@ -14,11 +14,7 @@
       color: {
         type: String,
         default: '#fff',
-      },
-      fontSize: {
-        type: String,
-        default: '32px',
-      },
+      }
     },
     computed: {
       getStyleObject() {
@@ -31,3 +27,19 @@
   };
   </script>
   
+  <style lang="scss" scoped>
+  .custom_h1 {
+    color: var(--white, #FFF);
+text-align: center;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: 36px; /* 112.5% */
+text-transform: uppercase;
+@media (min-width: 769px){
+  font-size: 108px;
+  line-height: 116px;
+}
+  }
+</style>
