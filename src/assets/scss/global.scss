@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+@import './normalize.css';
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #eee;
+}
+main {
+    max-width: 1920px;
+    min-width: 320px;
+    margin: 0 auto;
+}
